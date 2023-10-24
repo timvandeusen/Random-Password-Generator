@@ -21,7 +21,7 @@ else {
   if (numbers2) {input += numbers};
   if (symbols2) {input += symbols};
   for (i = 0; i < length; i++) {
-    randomPassword += input[Math.round(Math.random() * input.length)]
+    randomPassword += input[Math.floor(Math.random() * input.length)]
   }
   return(randomPassword);
 }
